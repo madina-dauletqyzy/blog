@@ -4,10 +4,10 @@
 <p><%= homeStartContent %></p>
 
 <% posts.forEach(function (post) { %>
-   <h1><%= post.inputTitle %></h1> 
+   <h1><%= post.title %></h1> 
 <p>
-    <%= _.truncate(post.inputContent, {'length':94}) %> 
-    <a href="/posts/<%= post.inputTitle %>"> Read more</a>
+    <%= _.truncate(post.content, {'length':94}) %> 
+    <a href="/posts/<%= post._id %>"> Read more</a>
   </p> 
     <% }); %>
 
